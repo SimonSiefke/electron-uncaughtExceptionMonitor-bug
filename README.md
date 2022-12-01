@@ -33,8 +33,7 @@ Node.js v18.12.1
 ## Output with npx electron .
 
 ```
-App threw an error during load
-Error: oops
+(node:53269) UnhandledPromiseRejectionWarning: Error: oops
     at main (/tmp/node-unhandled/index.js:7:9)
     at Object.<anonymous> (/tmp/node-unhandled/index.js:10:1)
     at Module._compile (node:internal/modules/cjs/loader:1141:14)
@@ -45,18 +44,6 @@ Error: oops
     at loadApplicationPackage (/tmp/node-unhandled/node_modules/electron/dist/resources/default_app.asar/main.js:121:16)
     at Object.<anonymous> (/tmp/node-unhandled/node_modules/electron/dist/resources/default_app.asar/main.js:233:9)
     at Module._compile (node:internal/modules/cjs/loader:1141:14)
-uncaught exception monitor called
-A JavaScript error occurred in the main process
-Uncaught Exception:
-Error: oops
-    at main (/tmp/node-unhandled/index.js:7:9)
-    at Object.<anonymous> (/tmp/node-unhandled/index.js:10:1)
-    at Module._compile (node:internal/modules/cjs/loader:1141:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1196:10)
-    at Module.load (node:internal/modules/cjs/loader:1011:32)
-    at Module._load (node:internal/modules/cjs/loader:846:12)
-    at f._load (node:electron/js2c/asar_bundle:2:13328)
-    at loadApplicationPackage (/tmp/node-unhandled/node_modules/electron/dist/resources/default_app.asar/main.js:121:16)
-    at Object.<anonymous> (/tmp/node-unhandled/node_modules/electron/dist/resources/default_app.asar/main.js:233:9)
-    at Module._compile (node:internal/modules/cjs/loader:1141:14)
+(Use `electron --trace-warnings ...` to show where the warning was created)
+(node:53269) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
 ```
